@@ -1,0 +1,9 @@
+Package: reverse
+Version: 1.0
+Date: 2012-04-14
+Title: An example R package
+Author: Bjorn Winckler <bjorn.winckler@gmail.com>
+Maintainer: Bjorn Winckler <bjorn.winckler@gmail.com>
+Depends: R (>= 2.14.1)
+Description: Function to reverse an integer vector.
+License: BSD
