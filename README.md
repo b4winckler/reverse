@@ -103,7 +103,7 @@ you will get a warning about missing documentation when checking the package
     you want to write examples that can't be run for some reason, you need to
     wrap them in `\dontrun{}`.
 
-## Building and installing package
+## Building and installing
 
 Creating a package which is ready to be shared consists of the following steps:
 
