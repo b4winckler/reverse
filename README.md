@@ -2,7 +2,9 @@
 
 This repository contains a minimal example of a complete R package that calls
 out to C.  I have written this package to demonstrate the minimal amount of
-steps needed in order to write *and share* a package which calls C code.
+steps needed in order to write *and share* a package which calls C code.  The
+document you are now reading grew out of my own experiences in writing and
+sharing the [LXB package][lxb] with colleagues at work.
 
 The [Writing R Extensions][manual] manual contains a reference for everything
 that is mentioned here (and more).
@@ -140,18 +142,19 @@ done at this point.  Simply send the `reverse_1.0.tar.gz` archive to the people
 you want to share with and tell them how to install your package.  The downside
 to this is that everybody you share with *must* have a C compiler installed.
 If you want to share with people who may not have a C compiler, then you need
-to create binary versions of your package.
+to create a binary version of your package.
 
 To create a binary version of your package you use the command
 
     R CMD install --build reverse_1.0.tar.gz
     
 This will first install your package and then create a binary package archive
-called `reverse_1.0.tgz` which you can share.  The problem with this method is
-that the binary package will *only* install on computers with the exact same
-operating system version and R version that you used to build the binary
-package.  To work around this problem you will have to submit your package to
-CRAN.
+called `reverse_1.0.tgz` which you can share (the installation proceedure for
+binary packages is the same as for source packages).  The problem with this
+method is that the binary package will *only* install on computers with the
+exact same operating system version and R version that you used to build the
+binary package.  To work around this problem you will have to submit your
+package to CRAN.
 
 ## Submitting to CRAN
 
@@ -188,3 +191,4 @@ request and I will review and merge it.
 [cran]: http://cran.r-project.org/
 [manual]: http://cran.r-project.org/doc/manuals/R-exts.html
 [submit]: http://CRAN.R-project.org/web/packages/policies.html
+[lxb]: http://cran.r-project.org/web/packages/lxb/index.html
