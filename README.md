@@ -72,7 +72,7 @@ overview of what goes where in the package:
     the `R/` subdirectory.  In this example it is sufficient to have a wrapper
     function like `reverse <- function(x) .Call('reverse', x)` but you may want
     to coerce any variables before passing them to your C function.  Note that
-    it is not necessary to load the shared library with `.Call()` in the
+    it is not necessary to load the shared library with `dyn.load()` in the
     wrapper.  R takes care of this for us.
 -   A `NAMESPACE` file which tells R to load the shared library and what
     wrapper functions to expose from the `R/` subdirectory.  In this example
