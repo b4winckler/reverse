@@ -7,7 +7,7 @@ document you are now reading grew out of my own experiences in writing and
 sharing the [LXB package][lxb] with colleagues at work.
 
 The [Writing R Extensions][manual] manual contains a reference for everything
-that is mentioned here (and more).
+that is mentioned here (and more).  You may also want to check out [Developing R packages](https://github.com/jtleek/rpackages).
 
 
 ## Packages with C code (more painful than you'd like unless your intended audience is programmers)
