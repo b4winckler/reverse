@@ -46,7 +46,7 @@ exported in your C code.  Here are the steps involved:
 
 -   To generate a shared library call
 
-        R CMD shlib reverse.c
+        R CMD SHLIB reverse.c
     
     in the `src/` directory.  This will create the shared library `reverse.so`.
     The file name extension depends on which operating system you are using (I
@@ -127,7 +127,7 @@ Creating a package which is ready to be shared consists of the following steps:
 
 At this point you can go ahead and install the package by typing
 
-    R CMD install reverse_1.0.tar.gz
+    R CMD INSTALL reverse_1.0.tar.gz
     
 Now start R, make sure the library loads by typing `library(reverse)` and that
 the exported function works by typing `reverse(1:10)` (you should see the
@@ -135,7 +135,7 @@ numbers 1 to 10 in reversed order).
 
 To uninstall the package type
 
-    R CMD remove reverse
+    R CMD REMOVE reverse
 
 If you only want to distribute the source version of your package then you are
 done at this point.  Simply send the `reverse_1.0.tar.gz` archive to the people
@@ -146,7 +146,7 @@ to create a binary version of your package.
 
 To create a binary version of your package you use the command
 
-    R CMD install --build reverse_1.0.tar.gz
+    R CMD INSTALL --build reverse_1.0.tar.gz
     
 This will first install your package and then create a binary package archive
 called `reverse_1.0.tgz` which you can share (the installation proceedure for
